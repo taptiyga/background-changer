@@ -11,6 +11,9 @@ body {
     justify-content: center;
     background-color: f1f5f8;
     font-family: Roboto, sans-serif;
+    transition: background-color 1s ease;
+
+
 }
 
 .container {
@@ -24,6 +27,7 @@ body {
     color: #fff;
     font-size: 32px;
     margin-bottom: 24px;
+    transition: color 2s ease;
 }
 
 .color {
@@ -40,10 +44,23 @@ body {
     color: #222;
     outline: none;
     cursor: pointer;
+    transition: all 0.15s ease;
 }
 
-.btn:hover {
+/* .btn:hover {
     background-color: #222;
     color: #fff;
-    transition: all 0.15s ease-in;
+} */
+@media(hover:hover) {
+    .btn:hover {
+        background-color: #222;
+        color: #fff;
+    }
+}
+
+@media(hover:none) {
+    .btn:active {
+        background-color: #222;
+        color: #fff;
+    }
 }

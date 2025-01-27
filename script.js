@@ -8,6 +8,7 @@ button.addEventListener('click', () => {
     document.body.style.backgroundColor = color
     title.style.color = color
     colorName.textContent = color
+    button
 })
 function getRendomNumber() {
     return Math.floor(Math.random() * hex.length)
